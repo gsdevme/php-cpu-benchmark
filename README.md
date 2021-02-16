@@ -14,5 +14,12 @@ This can simulate a "burst" like workflow.
 - gsdevme/php-cpu-benchmark-php80:latest
 
 ```bash
-docker run gsdevme/php-cpu-benchmark-php80:latest php bench.php
+# Stress (100% cpu burn)
+docker run gsdevme/php-cpu-benchmark-php80:latest php -c stress.php
+
+# Burst (100% cpu and sleep)
+docker run gsdevme/php-cpu-benchmark-php80:latest php -c burst.php
+
+# Run 4x burn cpu processes
+docker run gsdevme/php-cpu-benchmark-php80:latest php -c multi.sh 4
 ```

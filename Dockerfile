@@ -2,4 +2,8 @@ ARG PHP_VERSION
 
 FROM php:$PHP_VERSION-cli
 
-COPY bench.php .
+COPY stress.php .
+COPY multi.sh .
+COPY burst.php .
+
+RUN chmod +x multi.sh

@@ -8,10 +8,10 @@ This can simulate a "burst" like workflow.
 
 ### Container Image
 
-gsdevme/php-cpu-benchmark-php55:latest
-gsdevme/php-cpu-benchmark-php56:latest
-gsdevme/php-cpu-benchmark-php74:latest
-gsdevme/php-cpu-benchmark-php80:latest
+- gsdevme/php-cpu-benchmark-php55:latest
+- gsdevme/php-cpu-benchmark-php56:latest
+- gsdevme/php-cpu-benchmark-php74:latest
+- gsdevme/php-cpu-benchmark-php80:latest
 
 ```bash
 docker run gsdevme/php-cpu-benchmark-php80:latest php bench.php

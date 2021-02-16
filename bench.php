@@ -2,6 +2,8 @@
 
 $time = microtime(true);
 
+echo 'Starting' . PHP_EOL;
+
 function countToABillion() {
     $number = 0;
     $oneBillion = 1000000000;
